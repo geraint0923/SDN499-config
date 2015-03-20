@@ -1,0 +1,2 @@
+#!/bin/bash
+qemu-kvm -enable-kvm -m 2048 -drive file=/home/XXX/vm/openflow/mininet-vm-h3.qcow2,if=virtio -net nic,model=virtio,vlan=2 -net user,vlan=2,hostfwd=tcp::2203-:22 -net nic,model=virtio,macaddr=52:54:00:12:23:30 -net tap,ifname=tap3 -net nic,vlan=1,model=virtio,macaddr=66:54:00:12:33:30 -net tap,vlan=1,ifname=tap33 -nographic
