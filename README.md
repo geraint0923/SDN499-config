@@ -74,8 +74,10 @@ iface eth0 inet dhcp
 auto eth2
 iface eth2 inet static
 address 10.0.66.10
-#address 10.0.66.10	for the second VM
-#address 10.0.66.10	for the third VM
+# for the second VM
+#address 10.0.66.20
+# for the third VM
+#address 10.0.66.30
 netmask 255.255.255.0
 ```
 
