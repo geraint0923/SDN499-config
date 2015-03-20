@@ -2,6 +2,10 @@
 The scripts and tools to setup the virtual SDN experiment environment.
 Reference http://archive.openflow.org/wk/index.php/OpenFlow_Tutorial#Import_Virtual_Machine_Image
 
+The finished environment will be look like:
+
+![Image of Yaktocat](https://github.com/geraint0923/SDN499-config/raw/master/img/topo.png)
+
 ## Setup Virtual Machine
 Download the virtual machine image from OpenFlow official website:
 
