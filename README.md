@@ -83,3 +83,29 @@ reboot
 
 ## Configure the physical SDN switch Pica8
 
+Copy the script network/pica8.sh to the physical SDN switch, and then execute this script:
+
+```
+./pica8.sh
+```
+
+## Start Up the Ryu Controller
+
+First install Ryu on the host server
+
+```
+git clone git://github.com/osrg/ryu.git
+cd ryu; python ./setup.py install
+```
+
+Then start up the Ryu simple switch controller
+
+```
+PYTHONPATH=. ./bin/ryu-manager --verbose ryu/app/simple_switch.py
+```
+
+Note that, you can also use your customized switch application script in the last step.
+
+## Done
+
+Currently, the configuration of the whole experiment environment is done. And the experiments could be performed now.
