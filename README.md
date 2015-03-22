@@ -6,6 +6,36 @@ The finished environment will be look like:
 
 ![Image of Yaktocat](https://github.com/geraint0923/SDN499-config/raw/master/img/topo.png)
 
+## Environment
+
+### Topology
+
+This physical testbed has the following topology:
+
+1. There are three virtual machines, each of them uses one physical NIC on the host server.
+2. The three used physical NIC are connected to th physical SDN switch (Pica8) 's data port.
+3. In each virtual machine, there are three NICs, eth0 for ssh connection, eth1 for data NIC of Mininet, eth2 for control port to the host server.
+4. There will be three virtual hosts created in each virtual machine, all the virtual hosts have different IP addresses.
+
+### IP Address
+
+Host server has 10.0.66.1 for control connection.
+
+#### VM1
+
+1. data port: 10.0.23.11, 10.0.23.12, 10.0.23.13
+2. control port: 10.0.66.10
+
+#### VM2
+
+1. data port: 10.0.23.21, 10.0.23.22, 10.0.23.23
+2. control port: 10.0.66.20
+
+#### VM3
+
+1. data port: 10.0.23.31, 10.0.23.32, 10.0.23.33
+2. control port: 10.0.66.30
+
 ## Setup Virtual Machine
 Download the virtual machine image from OpenFlow official website:
 
