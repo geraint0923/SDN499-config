@@ -140,6 +140,15 @@ Then start up the Ryu simple switch controller
 PYTHONPATH=. ./bin/ryu-manager --verbose ryu/app/simple_switch.py
 ```
 
+If you would like the Ryu controller to listen on other ports instead of 6633(by default), additional parameter is required:
+
+```
+PYTHONPATH=. ./bin/ryu-manager --verbose --ofp-tcp-listen-port 6634 ryu/app/simple_switch.py
+```
+
+Use the above command, the Ryu controller will listen on 6634.
+
+
 Note that, you can also use your customized switch application script in the last step.
 
 ## Done
