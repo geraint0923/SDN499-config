@@ -151,6 +151,20 @@ Use the above command, the Ryu controller will listen on 6634.
 
 Note that, you can also use your customized switch application script in the last step.
 
+
+## Extra Configuration on Pica8
+
+To let Pica8 push MPLS labels to received table and copy to , we can use the following command:
+
+```
+ovs-ofctl  -O OpenFlow13 add-flow br0 in_port=1,actions=output:2,push_mpls:0x8847,set_mpls_label:7,output:3
+```
+
+This command will handle the packets from port1 and then push the MPLS label to the packets and send these packets to port 2 and port 3.
+
+
+
+
 ## Done
 
 Currently, the configuration of the whole experiment environment is done. And the experiments could be performed now.
