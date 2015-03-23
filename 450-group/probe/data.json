@@ -1,0 +1,10 @@
+[
+  {"id" : 0, "sid" : 1, "priority" : 65, "tcpDstPort" : 2, "actions" : ["tcpSrcPort:1,fwd:4"]},
+  {"id" : 1, "sid" : 1, "priority" : 64, "tcpDstPort" : 2, "actions" : ["tcpSrcPort:1,fwd:5"]},
+  {"id" : 2, "sid" : 1, "priority" : 5, "tcpSrcPort" : 2, "tcpDstPort" : 1, "actions" : ["dstip:0.0.0.2,fwd:0"]},
+  {"id" : 3, "sid" : 1, "priority" : 4, "tcpSrcPort" : 2, "actions" : ["dstip:0.0.0.2,fwd:1"]},
+  {"id" : 4, "sid" : 1, "priority" : 3, "tcpSrcPort" : 1, "tcpDstPort" : 1, "actions" : ["dstip:0.0.0.2,fwd:2"]},
+  {"id" : 5, "sid" : 1, "priority" : 2, "tcpDstPort" : 1, "actions" : ["dstip:0.0.0.2,fwd:3"]},
+  {"id" : 6, "sid" : 1, "priority" : 1, "tcpSrcPort" : 1, "actions" : ["dstip:0.0.0.2,fwd:4"]},
+  {"id" : 7, "sid" : 1, "priority" : 0, "actions" : ["dstip:0.0.0.2,fwd:5"]} 
+]

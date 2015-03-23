@@ -1,0 +1,13 @@
+{'tcpDstPort': 2}
+{'tcpDstPort': 2, 'tcpSrcPort': 2}
+{'tcpSrcPort': 2}
+{'tcpDstPort': 2, 'tcpSrcPort': 1}
+{'tcpSrcPort': 1}
+{'tcpDstPort': 1, 'tcpSrcPort': 2}
+{'tcpSrcPort': 2}
+{'tcpDstPort': 1, 'tcpSrcPort': 2}
+{'tcpDstPort': 1}
+{'tcpDstPort': 1, 'tcpSrcPort': 1}
+{'tcpDstPort': 1}
+{'tcpDstPort': 1, 'tcpSrcPort': 1}
+{'tcpSrcPort': 1}

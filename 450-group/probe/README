@@ -1,0 +1,9 @@
+input.txt: first line contains the id of all the rules, for the second, it's all the edges of the dependency graph.
+data.json: the detailed information of every rule.
+typename.txt: all the types(fields) that may appear in the fields of a rule
+data_to_injector.txt: data generated for injector to send out packets.
+
+Algorithm: I have fixed the original algorithm. Please check the final report probe engine implemenation part.
+
+Mar. 12th
+Lijun Tang
